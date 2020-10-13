@@ -1,0 +1,62 @@
+USE toko_online;
+CREATE TABLE daftar_provinsi(
+id_prov INT,
+nama_pulau VARCHAR(30),
+nama_prov VARCHAR (30),
+singkatan VARCHAR (5),
+ibu_kota VARCHAR(30),
+tgl_resmi VARCHAR(30),
+populasi INT,
+luas_kota INT,
+jiwa_km INT,
+apbd INT,
+pdrb INT,
+pdrb_kapita INT,
+ipm INT);
+
+SHOW TABLES;
+SELECT * FROM daftar_provinsi;
+
+INSERT INTO daftar_provinsi VALUES (
+2, "Sumatra", "Sumatra Utara","SU", "Medan", "29 November 1956", 13766851, 72981.23, 189, 8565.53, 523.77, 38.05, 68.87),(
+3, "Sumatra", "Sumatra Barat", "SB", "Padang", "9 Agustus 1957", 5131900, 42012.89, 121, 3887.84, 167.04, 32.55, 69.36),( 
+4, "Sumatra", "Riau", "RI", "Pekanbaru", "9 Agustus 1957", 6188442, 87023.66, 66, 9425.83, 679.69, 109.83, 70.33),(
+5, "Sumatra", "Kepulauan Riau", "KR", "Tanjungpinang", "25 Oktober 2002", 1917415, 8201.72, 237, 3944.69, 182.92, 95.40, 73.40),(
+6, "Sumatra", "Jambi", "JA","Jambi","9 Agustus 1957", 3344400, 50058.16, 63, 3548.66, 153.86, 46.00, 68.24),(
+7, "Sumatra", "Bengkulu", "BE", "Bengkulu", "18 November 1968", 1844800, 19919.33, 93, 2012.91, 45.24, 24.52, 68.06),(
+8, "Sumatra", "Sumatra Selatan", "SS", "Palembang", "14 Agustus 1950", 7941500, 91592.43, 93, 7697.99, 308.41, 38.84, 66.75),(
+9, "Sumatra", "Kepulauan Bangka Belitung", "BB", "Pangkalpinang", "21 November 2000", 1343900, 16424.06, 82, 2276.18, 56.39, 41.96, 68.27),(
+10, "Sumatra", "Lampung", "LA", "Bandar Lampung", "18 Maret 1964", 8026191, 34623.80, 227, 4350.25, 231.01, 28.78, 66.42),(
+11, "Jawa", "Banten", "BT", "Serang", "4 Oktober 2000", 11704877, 9662.92, 1298, 8398.20, 432.76, 36.97, 69.89),(
+12, "Jawa", "Jawa Barat", "JB", "Bandung", "4 Juli 1950", 46029668, 35377.76, 1306, 23067.20, 1385.96, 30.11, 68.80),(
+13, "Jawa", "Jakarta", "JK", "Jakarta", "28 Agustus 1961", 10012271, 664.01, 13530, 79285.13, 1761.41, 175.93, 78.39),(
+14, "Jawa", "Jawa Tengah", "JT", "Kota Semarang", "4 Juli 1950", 33522663, 32800.69, 986, 14336.87, 925.66, 27.61, 68.78),(
+15, "Jawa", "Yogyakarta", "YO", "Yogyakarta", "4 Maret 1950", 3553100, 3133.15, 1134, 3662.33, 93.45, 26.30, 76.81),(
+16, "Jawa", "Jawa Timur", "JI", "Surabaya", "4 Juli 1950", 38610202, 47799.75, 806, 18786.51, 1540.70, 39.90, 68.14),(
+17, "Kepulauan Nusa Tenggara", "Bali", "BA", "Denpasar", "14 Agustus 1958", 4104900, 5780.06, 738, 5461.18, 156.45, 38.11, 72.48),(
+18, "Kepulauan Nusa Tenggara", "Nusa Tenggara Barat", "NB", "Mataram", "14 Agustus 1958", 4773795, 18572.32, 239, 2884.89, 82.25, 17.23, 64.31),(
+19, "Kepulauan Nusa Tenggara", "Nusa Tenggara Timur", "NT", "Kupang", "14 Agustus 1958", 5036897, 48718.10, 106, 2916.88, 68.60, 13.62, 62.26),(
+20, "Kalimantan", "Kalimantan Barat", "KB", "Pontianak", "7 Desember 1956", 4716093, 147307.00, 41, 3929.94, 131.93, 27.98, 64.89),(
+21, "Kalimantan", "Kalimantan Selatan", "KS", "Banjarmasin", "7 Desember 1956", 3922790, 38744.23, 107, 6010.91, 131.59, 33.55, 67.63),(
+22, "Kalimantan", "Kalimantan Tengah", "KT", "Palangka Raya", "2 Juli 1958", 2439858, 153564.50, 16, 3510.91, 89.87, 6.84, 67.77),(
+23, "Kalimantan", "Kalimantan Timur", "KI", "Samarinda", "2 Juli 1958", 3351432, 129066.64, 17, 15731.10, 519.93, 155.14, 73.82),(
+24, "Kalimantan", "Kalimantan Utara", "KU", "Tanjung Selor", "25 Oktober 2012", 618384, 13925.72, 9, 2299.60, 59.08, 95.54, 68.64),(
+25, "Sulawesi", "Gorontalo", "GO", "Gorontalo", "22 Desember 2000", 1115633, 11257.07, 93, 1406.32, 25.2, 22.59, 65.17),(
+26, "Sulawesi", "Sulawesi Barat", "SR", "Mamuju", "5 Oktober 2004", 1258090, 16787.18, 75, 1388.27, 29.39, 23.36, 62.24),(
+27, "Sulawesi", "Sulawesi Selatan", "SN", "Makassar", "13 Desember 1960", 8432163, 46717.48, 183, 6186.39, 300.12, 35.59, 68.49),(
+28, "Sulawesi", "Sulawesi Tengah", "ST", "Kota Palu", "23 September 1964", 2831283, 61841.29, 42, 2514.84, 90.26, 31.88, 66.43),(
+29, "Sulawesi", "Sulawesi Tenggara", "SG", "Kendari", "23 September 1964", 2448081, 38067.70, 67, 2416.99, 78.62, 32.12, 68.07),(
+30, "Sulawesi", "Sulawesi Utara", "SA", "Manado", "13 Desember 1960", 2386604, 13851.64, 171, 2625.93, 80.62, 33.78, 69.96),(
+31, "Kepulauan Maluku", "Maluku", "MA", "Ambon", "17 Juni 1958", 1657409, 46914.03, 34, 2013.83, 31.73, 19.15, 66.74),(
+32, "Kepulauan Maluku", "Maluku Utara", "MU", "Sofifi", "4 Oktober 1999", 1138667, 31982.50, 27, 1599.66, 24.05, 21.12, 65.18),(
+33, "Papua", "Papua Barat", "PB", "Manokwari", "4 Oktober 1999", 849809, 99671.63, 7, 6570.74, 58.29, 68.59, 61.28),(
+34, "Papua", "Papua", "PA", "Jayapura", "10 September 1969", 3091047, 319036.05, 10, 12141.30, 123.18, 39.85, 56.75);
+
+
+DESCRIBE daftar_provinsi;
+
+ALTER TABLE daftar_provinsi MODIFY luas_kota FLOAT(7,2);
+ALTER TABLE daftar_provinsi MODIFY apbd FLOAT(7,2);
+ALTER TABLE daftar_provinsi MODIFY pdrb FLOAT(7,2);
+ALTER TABLE daftar_provinsi MODIFY pdrb_kapita FLOAT(7,2);
+ALTER TABLE daftar_provinsi MODIFY ipm FLOAT(5,2);
